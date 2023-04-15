@@ -5,16 +5,13 @@ export const Container = styled.div`
     color: white;
     display: grid;
     place-content: center-start;
-    min-height: calc(100vh - 12.6rem);
+    min-height: 100vh;
 
     .containerCard {
-        padding: 2rem;
         text-align: center;
+        margin-top: 16rem;
     }
 
-    h1 {
-        padding-block: 2rem;
-    }
 
     .containerTask {
         display: flex;

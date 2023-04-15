@@ -6,13 +6,14 @@ export const Container = styled.div`
     background: ${(props) => props.theme["--gray-900"]};
     height: 100vh;
 
+
     form {
         display: flex;
         flex-direction: column;
         gap: 5rem;
         max-width: 76.5rem;
-        margin: 3rem auto;
-        
+        margin: 0 auto;
+        margin-top: 16rem;
         text-align: center;
         color: white;
         padding-inline: 2rem;
@@ -29,9 +30,9 @@ export const Container = styled.div`
     .titleTasks {
         width: 100%;
         margin-top: 1rem;
-        padding: 1rem;
         color: ${(props) => props.theme["--white"]};
         background: ${(props) => props.theme["--gray-700"]};
+        padding: 1.4rem;
         border: 1px solid black;
         border-radius: .8rem;
     }
@@ -51,6 +52,10 @@ export const Container = styled.div`
         border: 1px solid black;
         border-radius: .8rem;
     }
+
+    .taskDescription::placeholder {
+        font-family: 'Inter', sans-serif;
+    }
     
     .taskDescription:focus {
         outline: 2px solid black;
@@ -58,7 +63,7 @@ export const Container = styled.div`
     }
 
     .buttonTasks {
-        padding: 1rem;
+        padding: 1.4rem;
         border: none;
         border-radius: .8rem;
         cursor: pointer;

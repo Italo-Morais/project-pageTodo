@@ -1,6 +1,7 @@
 import { Container } from "./style";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { API } from "../../services/api";
+// import background from "../../assets/background.png"
 
 export function Home() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
@@ -19,9 +20,9 @@ export function Home() {
   return (
     <Container>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h1>Lista De Tarefas</h1>
+        <h1>Adicione suas Tarefas</h1>
         <section>
-          <label htmlFor="task">Digite sua Tarefa</label>
+          <label htmlFor="task">Titulo da tarefa:</label>
           <input
             className="titleTasks"
             type="text"
@@ -33,7 +34,7 @@ export function Home() {
         </section>
 
         <section>
-          <label htmlFor="">Digite a descrição da Tarefa</label>
+          <label htmlFor="">Descreva sua tarefa:</label>
           <textarea 
             className="taskDescription" 
             maxLength={350} 
