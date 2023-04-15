@@ -37,7 +37,7 @@ export function Home() {
           <label htmlFor="">Descreva sua tarefa:</label>
           <textarea 
             className="taskDescription" 
-            maxLength={350} 
+            maxLength={250} 
             {...register('descriptionTask', { required: true })}
             id="" 
             cols={30} 

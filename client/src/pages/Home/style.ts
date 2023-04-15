@@ -1,22 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    background: ${(props) => props.theme["--gray-900"]};
     display: flex;
     justify-content: center;
-    background: ${(props) => props.theme["--gray-900"]};
     height: 100vh;
-
-
+    align-items: center;
+    
+    
     form {
+        background: ${(props) => props.theme["--gray-800"]};
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         gap: 5rem;
         max-width: 76.5rem;
-        margin: 0 auto;
-        margin-top: 16rem;
+        /* margin: 0 auto; */
+        /* margin-top: 16rem; */
         text-align: center;
         color: white;
         padding-inline: 2rem;
+        height: fit-content;
+        border-radius: 2rem;
     }
 
     .error {
